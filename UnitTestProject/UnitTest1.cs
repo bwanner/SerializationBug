@@ -10,6 +10,8 @@ namespace UnitTestProject
     [TestClass]
     public class UnitTest1 : TestingSiloHost
     {
+        //public UnitTest1() : base(new TestingSiloOptions() { StartSecondary = true, StartPrimary = false}) { }
+
         [ClassCleanup]
         public static void ClassCleanup()
         {
