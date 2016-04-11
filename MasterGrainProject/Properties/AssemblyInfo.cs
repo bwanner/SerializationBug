@@ -18,7 +18,7 @@ using SerializationBug;
 
 //[assembly: KnownAssembly("SerializationBug")]
 //[assembly: KnownAssembly("SerializationBug, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-[assembly: KnownType(typeof(CustomObject))]
+//[assembly: KnownType(typeof(CustomObject))]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

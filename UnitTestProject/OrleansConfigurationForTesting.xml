@@ -2,17 +2,17 @@
 <OrleansConfiguration xmlns="urn:orleans">
   <Globals>
     <StorageProviders>
-      <!--<Provider Type="Orleans.Storage.MemoryStorage" Name="MemoryStore" />
-      <Provider Type="Orleans.Storage.MemoryStorage" Name="Default" />-->
-      <!--<Provider Type="Orleans.Storage.AzureTableStorage" Name="AzureStore" />-->
+      <Provider Type="Orleans.Storage.MemoryStorage" Name="MemoryStore" />
+      <Provider Type="Orleans.Storage.MemoryStorage" Name="Default" />
+      <!--<Provider Type="Orleans.Storage.AzureTableStorage" Name="AzureStore"/>-->
     </StorageProviders>
     <SeedNode Address="localhost" Port="22222"/>
-    <Messaging ResponseTimeout="30s"/>
+    <Messaging ResponseTimeout="5s"/>
   </Globals>
   <Defaults>
     <Networking Address="localhost" Port="22222"/>
     <ProxyingGateway Address="localhost" Port="40000" />
-    <Tracing DefaultTraceLevel="Info" TraceToConsole="true" TraceToFile="{0}-{1}.log" PropagateActivityId="false" BulkMessageLimit="1000">
+    <Tracing DefaultTraceLevel="Verbose" TraceToConsole="false" TraceToFile="{0}-{1}.log" PropagateActivityId="false" BulkMessageLimit="1000">
        <TraceLevelOverride LogPrefix="Application" TraceLevel="Info" />
        <!--
        <TraceLevelOverride LogPrefix="Runtime.Dispatcher" TraceLevel="Verbose" />
